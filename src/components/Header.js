@@ -3,12 +3,13 @@ import styled from "@emotion/styled";
 
 const Wrapper = styled.header`
   display: grid;
-  grid: 1fr / 1fr 1fr;
+  grid: 1fr / repeat(2, 1fr);
+  gap: 38px;
   margin: 109px 0 96px 0;
 
   @media (max-width: 990px) {
     margin: 17px 0 60px 0;
-    grid: 1fr 1fr / 1fr;
+    grid: repeat(2, auto) / 1fr;
   }
 `;
 
